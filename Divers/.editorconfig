@@ -1,0 +1,116 @@
+# editorconfig.org
+
+root = true
+
+[*]
+charset = utf-8
+
+[*.cs]
+
+# Space before and after operators
+csharp_space_around_binary_operators = before_and_after
+
+# Space after conditional structures
+csharp_space_after_keywords_in_control_flow_statements = true
+
+# Indentation
+csharp_indent_case_contents = true
+csharp_indent_switch_labels = true
+csharp_indent_block_contents = true
+csharp_indent_case_contents_when_block = true
+csharp_indent_braces = false
+
+# The private keyword add an underscore as the naming convention for variables and parameters
+
+dotnet_naming_rule.var_private_with_underscore.symbols = var_private
+dotnet_naming_symbols.var_private.applicable_kinds = local,parameter
+dotnet_naming_symbols.var_private.applicable_accessibilities = private
+
+dotnet_naming_rule.var_private_with_underscore.style = var_private_style
+dotnet_naming_style.var_private_style.required_prefix = _
+dotnet_naming_style.var_private_style.capitalization = camel_case
+
+dotnet_naming_rule.var_private_with_underscore.severity = error
+
+# The private keyword add an underscore as the naming convention for classes and methods
+
+dotnet_naming_rule.class_private_with_underscore.symbols = class_private
+dotnet_naming_symbols.class_private.applicable_kinds = class, method
+dotnet_naming_symbols.class_private.applicable_accessibilities = private
+
+dotnet_naming_rule.class_private_with_underscore.style = class_private_style
+dotnet_naming_style.class_private_style.required_prefix = _
+dotnet_naming_style.class_private_style.capitalization = pascal_case
+
+dotnet_naming_rule.class_private_with_underscore.severity = error
+
+# The private keyword add an underscore as the naming convention for consts
+
+dotnet_naming_rule.private_const_underscore.symbols = const_private
+dotnet_naming_symbols.const_private.applicable_kinds = *
+dotnet_naming_symbols.const_private.applicable_accessibilities = private
+dotnet_naming_symbols.const_private.required_modifiers = const
+
+dotnet_naming_rule.private_const_underscore.style = const_private_style
+dotnet_naming_style.const_private_style.required_prefix = _
+dotnet_naming_style.const_private_style.word_separator = _
+dotnet_naming_style.const_private_style.capitalization = all_upper
+
+dotnet_naming_rule.private_const_underscore.severity = error
+
+# Constants must be written in UPPER_SNAKE_CASE 
+
+dotnet_naming_rule.consts_in_snake_case.symbols = consts_snake
+dotnet_naming_symbols.consts_snake.applicable_kinds = *
+dotnet_naming_symbols.consts_snake.applicable_accessibilities = *
+dotnet_naming_symbols.consts_snake.required_modifiers = const
+
+dotnet_naming_rule.consts_in_snake_case.style = consts_snake_style
+dotnet_naming_style.consts_snake_style.word_separator = _
+dotnet_naming_style.consts_snake_style.capitalization = all_upper
+
+dotnet_naming_rule.consts_in_snake_case.severity = error
+
+# Variables must be written with lowerCamelCase
+
+dotnet_naming_rule.variables_in_camel_case.symbols = variables_camel
+dotnet_naming_symbols.variables_camel.applicable_kinds = local
+dotnet_naming_symbols.variables_camel.applicable_accessibilities = *
+
+dotnet_naming_rule.variables_in_camel_case.style = camel_case_style
+dotnet_naming_style.camel_case_style.capitalization = camel_case
+
+dotnet_naming_rule.variables_in_camel_case.severity = error
+
+# Parameters must be written in lowerCamelCase
+
+dotnet_naming_rule.parameters_in_camel_case.symbols = parameters_camel
+dotnet_naming_symbols.parameters_camel.applicable_kinds = parameter
+dotnet_naming_symbols.parameters_camel.applicable_accessibilities = *
+
+dotnet_naming_rule.parameters_in_camel_case.style = parameters_camel_style
+dotnet_naming_style.parameters_camel_style.capitalization = camel_case
+
+dotnet_naming_rule.parameters_in_camel_case.severity = error
+
+# Methods must be written in UpperCamelCase
+
+dotnet_naming_rule.methods_in_pascal_case.symbols = methods_pascal
+dotnet_naming_symbols.methods_pascal.applicable_kinds = method
+dotnet_naming_symbols.methods_pascal.applicable_accessibilities = *
+
+dotnet_naming_rule.methods_in_pascal_case.style = methods_pascal_case_style
+dotnet_naming_style.methods_pascal_case_style.capitalization = pascal_case
+
+dotnet_naming_rule.methods_in_pascal_case.severity = error
+
+# Classes must be written UpperCamelCase
+
+dotnet_naming_rule.classes_in_pascal_case.symbols = classes_pascal
+dotnet_naming_symbols.classes_pascal.applicable_kinds = class
+dotnet_naming_symbols.classes_pascal.applicable_accessibilities = *
+
+dotnet_naming_rule.classes_in_pascal_case.style = classes_pascal_case_style
+dotnet_naming_style.classes_pascal_case_style.capitalization = pascal_case
+
+dotnet_naming_rule.classes_in_pascal_case.severity = error

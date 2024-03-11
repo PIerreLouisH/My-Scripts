@@ -1,0 +1,16 @@
+error: Could not read .foreverignore file.
+error: ENOENT: no such file or directory, open '/home/pi/reivax/.foreverignore'
+error: restarting script because /home/pi/reivax/fiche.db-wal changed
+error: restarting script because /home/pi/reivax/fiche.db-shm changed
+SELECT count(*) FROM sqlite_master WHERE type='table' AND name = 'fiche';
+SELECT count(*) FROM sqlite_master WHERE type='table' AND name = 'roliste';
+error: restarting script because /home/pi/reivax/forever.log changed
+error: restarting script because /home/pi/reivax/out.log changed
+error: Forever detected script was killed by signal: SIGKILL
+error: Script restart attempt #1
+error: restarting script because /home/pi/reivax/fiche.db-wal changed
+error: restarting script because /home/pi/reivax/fiche.db-shm changed
+error: restarting script because /home/pi/reivax/forever.log changed
+error: Forever detected script was killed by signal: SIGKILL
+error: Script restart attempt #2
+error: Forever detected script was killed by signal: SIGKILL

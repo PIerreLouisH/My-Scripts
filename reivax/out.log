@@ -1,0 +1,7 @@
+SELECT count(*) FROM sqlite_master WHERE type='table' AND name = 'fiche';
+SELECT count(*) FROM sqlite_master WHERE type='table' AND name = 'roliste';
+SELECT count(*) FROM sqlite_master WHERE type='table' AND name = 'fiche';
+SELECT count(*) FROM sqlite_master WHERE type='table' AND name = 'roliste';
+SELECT * FROM fiche WHERE fk_id_roliste = '310755532900270083'
+SELECT * FROM fiche INNER JOIN roliste ON fiche.fk_id_roliste=roliste.id_roliste WHERE id_roliste = '310755532900270083' 
+update fiche set age = 42.0 where id_fiche =1.0

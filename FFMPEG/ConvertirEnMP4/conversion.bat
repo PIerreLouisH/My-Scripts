@@ -1,0 +1,1 @@
+for %%A IN (*.avi) DO "C:\ffmpeg\bin\ffmpeg.exe" -i "%%A" "Converted\%%A.mp4"
